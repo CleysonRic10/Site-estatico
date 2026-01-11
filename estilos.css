@@ -177,12 +177,17 @@ footer .line-footer{
 .borda{
     border-top: 2px solid #312E81;
 }
+footer .logo i{
+    color: #312E81;
+    font-size: 2.25rem;
+}
 footer .line-footer p i{
     color: #FFF;
     font-size: 26px;
 }
 footer .line-footer p a{
     color: #FFF;
+    text-decoration: none;
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 16px;
 }
@@ -216,10 +221,14 @@ footer .line-footer p a{
     .topo-do-site .flex{
         flex-direction: column-reverse;
     }
+    header .flex{
+        align-items:flex-start;
+    }
     /* Cabecalho */
     .menu-desktop, .btn-contato{
         display: none;
     }
+
     /* TOPO do SITE */
     section .topo-do-site{
         padding: 20 8%;
@@ -231,8 +240,12 @@ footer .line-footer p a{
         font-size: 20px;
     }
     body{
-        background-color: lightgreen;
+        background-color:rgb(222, 150, 100);
         /* font-size: clamp(.75rem, 1.65vw, 1.25rem); */
+    }
+    footer .flex{
+        flex-direction: row; 
+        align-items:flex-start;
     }
 }
 /* FIM      Tela iPad 1080px LARGURA            */
