@@ -21,4 +21,14 @@ Criar o Rodapé
         settings > page > none >> main > SAVE 
         https://cleysonric10.github.io/Site-estatico/#
         
-        subir site na internet...
+        subir site na internet.
+	Made SECTION calculos with labels and textbox.
+
+12-01
+	backUP dia anterior.
+        trabalhando com tag FORM. na secao experiencia...
+	formulas dos calculos javascript...
+	branch section AND branch Menu mobile...
+
+
+
