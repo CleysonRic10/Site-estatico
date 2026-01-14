@@ -53,33 +53,44 @@
         </section><!--topo-do-site-->
 
 
-        <section id="experiencia" class="experiencia">
+        <section id="experiencia" class="grid1">
             <div class="interface">
                 <div class="txt-do-site">
-                    <h2 class="titulo">Projeção de <span>Contra-cheque.</span></h2>
+                    <h2 class="titulo">Projeção diária, mensal e anual de<span>Contra-cheque</span>.</h2>
                 </div>
                 <div id="container">
                     <div class="item">
                         <form action="" method="post">
-                            <label for="salario" tabindex="0">Salário:</label><input type="text"   tabindex="1" id="salario"    value="1.621,01" class="money" /><br><br>
+                            <label for="salario" tabindex="0">Seu salário R$</label>
+                            <input type="text" tabindex="1" id="salario" value="1.621,01" class="money"/>
                         </form>
                     </div><!--item-->
                     <div class="item">
                         <form action="" method="post">
-                            <label for="hr-seg-sex">Horas Semanais</label><input type="number" tabindex="2" id="hr-seg-sex" value="40" onblur="calcular()" /><br><br>
+                            <label for="hr-semana">Quantidade horas<br>Semanais</label>
+                            <input type="number" tabindex="2" id="hr-semana" value="40" onblur="calcular()"/>
                         </form>
                     </div><!--item-->
                     <div class="item">
-                        <p tabindex="3">Salário por hora R$ <span id="resultado">0,00</span></p>
+                        <p tabindex="3">Seu salário por hora R$ <span id="vlr_hr">0,00</span></p>
                     </div><!--item-->
-                    <div class="item"></div><!--item-->
+
+                    <div class="item">
+                        <!--p tabindex="4">Quantidade de <span id="num-sem" name="num-sem" value="52,179" readonly>52</span> semanas do ano.</p-->
+                        <p tabindex="4">Você ganha           R$ <span id="vlr_sem">0,01</span> por semana.</p> 
+                    </div><!--item-->
+                    <div class="item">
+                        <!--p tabindex="4">Quantidade de <span id="hr-trab-ano" name="hr-trab-ano" value="4,333" readonly>4</span> semanas por mês.</p-->
+                        <p tabindex="4">Você trabalha <span id="hr-trab-ano" value="173,333" readonly>173</span> horas trabalhadas por mês.</p> 
+                    </div><!--item-->
+                    <div class="item">
+                        <p tabindex="4">Você trabalha <span id="hr-trab-ano" name="hr-trab-ano" value="2.087,16" readonly>2.080</span> horas trabalhadas por ano.</p>
+                    </div><!--item-->
 
                     <div class="item"></div><!--item-->
                     <div class="item"></div><!--item-->
                     <div class="item"></div><!--item-->
-                    <div class="item"></div><!--item-->
 
-                    <div class="item"></div><!--item-->
                     <div class="item"></div><!--item-->
                     <div class="item"></div><!--item-->
                     <div class="item"></div><!--item-->
