@@ -45,9 +45,8 @@ Criar o Rodapé
 
         tratar erros de input classe salario e hr-seg-sex.
         Calculos 'Salario por hora'.
-        Calculos 'Ganho semanal'.
 
+14-01
+        Corrigir o calculo de 'Ganho semanal'.
         Na secao especial testar display grid no css...
         criar branch Menu mobile...
-
-

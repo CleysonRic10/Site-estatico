@@ -69,11 +69,9 @@ para garantir que o seu descanso também esteja contabilizado no valor do salár
         maximumFractionDigits: 3
       });
 
-      //5- 6,1401515... x 44                                  = 270,1666....
-      //6- 6,7541666... x 40                                  = 270,1666.... 
-      let vlr_parc1 = ((vlr_hora_dia * media_hr_tr_mes) *5);  //270,1666666...
-      let vlr_parc2 = (vlr_parc1 * 0.5);                      //135,0841666...
-      const vlr_semana = vlr_parc1 + vlr_parc2;               //405,25
+      const tot_semana_mes = 4.285719;    //índice para retornar o valor semanal para mensal!
+      const vlr_semana = Salbase * (7/30);
+
       //console.log(vlr_semana);
 
       // SEMANAL
