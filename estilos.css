@@ -16,6 +16,7 @@
 
 html{
     height: 100vh;
+    /* scroll-behavior: smooth; */
 }
 
 body{
@@ -118,7 +119,7 @@ header .btn-contato button:hover{
     height: 100vh;
     background: rgb(222, 150, 100);
     /* padding: 40px 20px; */
-    
+
     /* começa fora da tela */
     transform: translateX(100%);
     opacity: 0;
