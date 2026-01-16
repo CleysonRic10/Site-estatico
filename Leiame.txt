@@ -28,8 +28,8 @@ Criar o Rodapé
 	backUP dia anterior.
         usar tag FORM. na secao experiencia.
 	usar operacoes matematicas no javascript e exibicao no html.
-	created branch section.
-        Na secao especial testar display grid no css...
+        Na secao especial criar display grid no html e css.
+        created branch section.
 
 13-01
         Lista vs-CODE DESENVOLVEDOR (tecla ALT = option, tecla CTRL = command)
@@ -41,12 +41,33 @@ Criar o Rodapé
         Multi-cursor 	: ALT + click
         Zen-mode        : -
         InteLLisense	: CTRL + espaço (auto-preenchimento)
+        Navegar aba ant : Control + Tab
         Atalhos	: CTRL + K seguido CTRL + S
 
-        tratar erros de input classe salario e hr-seg-sex.
-        Calculos 'Salario por hora'.
+
+        secao especial:
+                tratar erros de input.
+                calcular 'Salario por hora'.
+                exibir os resultados.
+                
 
 14-01
         Corrigir o calculo de 'Ganho semanal'.
-        Na secao especial testar display grid no css...
-        criar branch Menu mobile...
+
+        criar branch menu:...
+                17h - Criacao menu mobile...
+
+15-01
+        Melhoria menu MOBILE ...
+
+15-01
+        Melhoria menu MOBILE.
+        acerto da estilizacao do menu, quando esta para desktop.
+        concluido a centralizacao dos itens da lista do menu.
+        estilizacao ao passar o mouse de banco para azul.
+        animacao deslizante de menu aberto para menu fechado.
+        fechar menu quando escolhido item da lista.
+        overlay para inibicao do foco para o menu.
+
+        Jscript correcao botoes abertura e fechamento no menu mobile.
+        implementacao do overlay e lista de itens no Jscript.
