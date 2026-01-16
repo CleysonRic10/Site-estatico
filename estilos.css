@@ -117,11 +117,17 @@ header .btn-contato button:hover{
     width: 75%;                         /* 75% */
     height: 100vh;
     background: rgb(222, 150, 100);
-    padding: 40px 20px;
-    z-index: 99999;    
-    transform: translateX(100%); /* fora da tela */
-    transition: transform 0.8s ease;
+    /* padding: 40px 20px; */
+    
+    /* começa fora da tela */
+    transform: translateX(100%);
+    opacity: 0;
+
+    transition: transform 0.4s ease, opacity 0.3s ease;
+
+    z-index: 99999;
 }
+
 /* menu aberto */
 #menu-mobile.active{
     transform: translateX(0); /* entra na tela */
@@ -140,25 +146,32 @@ header .btn-contato button:hover{
     color: #312E81;
     transform: scale(1.05); /* tag a nao possui propried display: inline-block */
 }
-.overlay-menu{
-    background-color:  rgba(222, 151, 100, 0.85);   /* 0.85 de opacidade */
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top:0;
-    left: 0;           
-    z-index: 88888;
-    /* display: none; */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s ease;
-}
-
+/* 
 .item-menu.active{
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease;
-} 
+}  
+*/
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 151, 100, 0.5);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease;
+    z-index: 88888;
+}
+
+.overlay-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+}
 
 /*  ------------------------- FIM ESTILO MOBILE -------------------------  */
 
@@ -390,18 +403,23 @@ footer .line-footer p a{
         /* transform: translateX(100%); /* fora da tela *
         transition: transform 1.0s ease; */
     }
-
+/* 
     .overlay-menu.active{
         display: block;
         opacity: 1;
         visibility: visible;
-    } 
+    }  */
+
+    .overlay-menu.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
 
     /* Menu aberto */
     #menu-mobile.active {
         width: 75%;
-        transform: translateX(0); /* entra na tela */
-        display: block;
+        transform: translateX(0);
+        opacity: 1;
     }
 
     #menu-mobile ul {
