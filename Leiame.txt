@@ -61,13 +61,19 @@ Criar o Rodapé
         Melhoria menu MOBILE ...
 
 15-01
-        Melhoria menu MOBILE.
-        acerto da estilizacao do menu, quando esta para desktop.
-        concluido a centralizacao dos itens da lista do menu.
-        estilizacao ao passar o mouse de banco para azul.
-        animacao deslizante de menu aberto para menu fechado.
-        fechar menu quando escolhido item da lista.
-        overlay para inibicao do foco para o menu.
+        6a alteracao
+                Melhoria menu MOBILE.
+                acerto da estilizacao do menu, quando esta para desktop.
+                concluido a centralizacao dos itens da lista do menu.
+                estilizacao ao passar o mouse de banco para azul.
+                animacao deslizante de menu aberto para menu fechado.
+                fechar menu quando escolhido item da lista.
+                overlay para inibicao do foco para o menu.
 
-        Jscript correcao botoes abertura e fechamento no menu mobile.
-        implementacao do overlay e lista de itens no Jscript.
+                Jscript correcao botoes abertura e fechamento no menu mobile.
+                implementacao do overlay e lista de itens no Jscript.
+
+        7a alteracao
+                Ao subir o site para o servidor o menu mobile se apresentou junto com o menu desktop,
+                estando errado. Subindo 1a tentativa de correcao. Bkp: Site-16-01 com o erro do descrito 
+                anteriormente.
