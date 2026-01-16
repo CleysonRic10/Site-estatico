@@ -6,6 +6,7 @@
     <!--boostrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <!--Icons-->
+    <script src="script.js" defer></script>
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilos.css">
     <!--style>
@@ -29,9 +30,27 @@
                 </nav>
                 <div class="btn-contato">
                     <a href="#"><button>CONTATO</button></a>
-                </div><!--btn-contato-->
+                </div><!--btn-contato-->    
             </div><!--flex-->
+
+            <div class="tela-mobile"><!-- --------------------------------      menu-mobile     -------------------------------- -->
+                <i id="open-menu" class="bi bi-list"></i>           <!--btn-abrir-->
+                <nav id="menu-mobile" class="nav-itens nav-mobile">
+                    <i id="close-menu" class="bi bi-x-lg"></i>          <!--btn-fechar-->
+                    <ul class="item-menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#experiencia">EXPERIENCIA</a></li>
+                        <li><a href="#especialidades">HABILIDADES</a></li>
+                        <li><a href="#">FORMAÇÃO</a></li>  
+                        <li><a href="#">CONTATO</a></li>                      
+                    </ul>
+                </nav>
+            </div><!-- ----------------------------------------------------     menu-mobile     -------------------------------- -->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
         </div><!--interface-->
+
     </header>
     
     <main>
@@ -51,7 +70,6 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--topo-do-site-->
-
 
         <section id="experiencia" class="grid1">
             <div class="interface">
@@ -98,7 +116,6 @@
                 </div><!--container-->
             </div><!--interface-->
         </section><!--calculos-->
-
 
         <section id="especialidades" class="especialidades">
             <div class="interface">
@@ -158,6 +175,6 @@
 
         </div>
     </footer>
-    <script src="script.js"></script>
+    <!--script src="script.js"></script-->
 </body>
 </html>
