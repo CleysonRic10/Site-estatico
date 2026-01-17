@@ -72,8 +72,14 @@ Criar o Rodapé
 
                 Jscript correcao botoes abertura e fechamento no menu mobile.
                 implementacao do overlay e lista de itens no Jscript.
-
+16-01
         7a alteracao
                 Ao subir o site para o servidor o menu mobile se apresentou junto com o menu desktop,
                 estando errado. Subindo 1a tentativa de correcao. Bkp: Site-16-01 com o erro do descrito 
                 anteriormente.
+
+17-01
+        8a alteracao
+                formula PV = CT ÷ (1 - %ML)
+                Visualizacao de conteudo no mobile. 
+                (Substit. experiencia por funcionario)
