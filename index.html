@@ -15,7 +15,7 @@
 <body>
     <header id="header">
         <div class="interface">
-            <div class="flex">
+            <div class="flex"><!-- --------------------------------      menu-desktop     -------------------------------- -->
                 <div class="logo">
                     <a href="#"><i class="bi bi-globe-americas"></i></a>
                     <!--div class="viewport-debug"></div-->
@@ -23,15 +23,14 @@
                 <nav class="menu-desktop">
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#experiencia">EXPERIENCIA</a></li>
-                        <li><a href="#especialidades">HABILIDADES</a></li>
-                        <li><a href="#">FORMAÇÃO</a></li>                        
+                        <li><a href="#especialidades">DESENVOLVIMENTO</a></li>
+                        <li><a href="#sobre">SOBRE</a></li>                        
                     </ul>
                 </nav>
                 <div class="btn-contato">
                     <a href="#"><button>CONTATO</button></a>
                 </div><!--btn-contato-->    
-            </div><!--flex-->
+            </div><!--flex--><!-- --------------------------------      menu-desktop     -------------------------------- -->
 
             <div class="tela-mobile"><!-- --------------------------------      menu-mobile     -------------------------------- -->
                 <i id="open-menu" class="bi bi-list"></i>           <!--btn-abrir-->
@@ -39,9 +38,8 @@
                     <i id="close-menu" class="bi bi-x-lg"></i>          <!--btn-fechar-->
                     <ul class="item-menu">
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#experiencia">EXPERIENCIA</a></li>
-                        <li><a href="#especialidades">HABILIDADES</a></li>
-                        <li><a href="#">FORMAÇÃO</a></li>  
+                        <li><a href="#especialidades">DESENVOLVIMENTO</a></li>
+                        <li><a href="#sobre">SOBRE</a></li>  
                         <li><a href="#">CONTATO</a></li>                      
                     </ul>
                 </nav>
@@ -57,6 +55,7 @@
         <section class="topo-do-site">
             <div class="interface">
                 <div class="flex">
+
                     <div class="txt-topo-site">
                         <h1>Transforme ideias em realidade.<span> Comece agora.</span></h1>
                         <p>
@@ -65,16 +64,44 @@
                         </p>
                     </div><!-- txt-topo-site -->
                     <div class="img-topo-site">
-                        <img src="CapaPortfolio2.png">
+                        <img src="Image1.png">
                     </div><!--img-topo-site-->
+                    <div class="txt-boas-vindas">
+                        <h1>Bem-vindo, <span>visitante.</span></h1>
+                    </div>
+
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--topo-do-site-->
 
-        <section id="experiencia" class="grid1">
+        <section id="especialidades" class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">Áreas de<span> ATUAÇÃO</span>.</h2>
+                <div class="flex">
+
+                    <a href="#contracheque">
+                        <div class="especialidades-box">
+                            <i class="bi bi-code-slash"></i>
+                            <h3>PESSOAL</h3>
+                            <p>Projeção de CONTRA-CHEQUE.
+                            </p>
+                        </div><!--especialidades-box 1 -->
+                    </a>
+                    <div class="especialidades-box">
+                        <i class="bi bi-braces"></i>
+                        <h3>PREÇOS</h3>
+                        <p>Demonstração CUSTO e LUCRO.
+                        </p>
+                    </div><!--especialidades-box 2 -->
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+
+        <section id="contracheque" class="grid1"><!--CONTRACHEQUE-->
             <div class="interface">
                 <div class="txt-do-site">
-                    <h2 class="titulo">Projeção diária, mensal e anual de<span>Contra-cheque</span>.</h2>
+                    <h2 class="titulo">Projeção de<span>CONTRACHEQUE</span>.</h2>
                 </div>
                 <div id="container">
                     <div class="item">
@@ -115,37 +142,41 @@
 
                 </div><!--container-->
             </div><!--interface-->
-        </section><!--calculos-->
+        </section><!--CONTRACHEQUE-->
 
-        <section id="especialidades" class="especialidades">
+        <section id="sobre"><!--SOBRE-->
             <div class="interface">
-                <h2 class="titulo">Minhas<span>HABILIDADES</span>.</h2>
+                <h2 class="titulo">Sobre<span> MIM</span>.</h2>
                 <div class="flex">
+                    <div class="txt-sobre">
+                        <p>
+                            Trabalho com tecnologias voltadas para o desenvolvimento front-end,
+                            aplicando conceitos modernos de responsividade, acessibilidade
+                            e organização de código.
+                        </p>
 
-                    <div class="especialidades-box">
-                        <i class="bi bi-code-slash"></i>
-                        <h3>HTML</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga tenetur animi nobis perferendis iusto ducimus ut nemo tempora ipsam consequuntur consectetur iure quo dolorem deserunt sed, minus obcaecati reprehenderit?                            
+                        <ul>
+                            <li>HTML5 semântico e estruturado</li>
+                            <li>CSS3 moderno (Flexbox, Grid, Media Queries)</li>
+                            <li>JavaScript para interações e lógica de interface</li>
+                            <li>Layouts responsivos para desktop e dispositivos móveis</li>
+                            <li>Boas práticas de UX e versionamento de código com GitHub</li>
+                        </ul>
+
+                        <p>
+                            Além da formação acadêmica, realizo estudos independentes
+                            e projetos práticos como este que complementam meu aprendizado,
+                            acompanhando as tendências e boas práticas do mercado.
                         </p>
-                    </div><!--especialidades-box 1 -->
-                    <div class="especialidades-box">
-                        <!--i class="bi bi-cart3"></i>
-                        <i class="bi bi-filetype-css"></i-->
-                        <i class="bi bi-braces"></i>
-                        <h3>CSS</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga tenetur animi nobis perferendis iusto ducimus ut nemo tempora ipsam consequuntur consectetur iure quo dolorem deserunt sed, minus obcaecati reprehenderit?                            
-                        </p>
-                    </div><!--especialidades-box 2 -->
-                    <div class="especialidades-box">
-                        <i class="bi bi-backpack"></i>
-                        <h3>JavaScript</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga tenetur animi nobis perferendis iusto ducimus ut nemo tempora ipsam consequuntur consectetur iure quo dolorem deserunt sed, minus obcaecati reprehenderit?                            
-                        </p>
-                    </div><!--especialidades-box 3 -->
+                    </div><!--txt-sobre-->
+
+                    <div class="img-sobre">
+                        <img src="CapaPortfolio2.png">
+                    </div><!--img-sobre-->
 
                 </div><!--flex-->
             </div><!--interface-->
-        </section><!--especialidades-->
+        </section><!--SOBRE-->
     </main>
 
     <footer>
