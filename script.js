@@ -91,3 +91,34 @@ para garantir que o seu descanso também esteja contabilizado no valor do salár
   calcular();
 
 
+//     **********         **********    Menu Mobile   **********         **********      //
+const menu = document.getElementById('menu-mobile');
+const overlay = document.querySelector('.overlay-menu');
+const openMenu = document.getElementById('open-menu');
+const closeMenu = document.getElementById('close-menu');
+
+// const lista = document.querySelector('.item-menu'); 
+const linksMenu = menu.querySelectorAll('a');
+
+openMenu.addEventListener('click', abrirMenu);
+closeMenu.addEventListener('click', fecharMenu);
+overlay.addEventListener('click', fecharMenu);
+
+linksMenu.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+});
+
+function abrirMenu() {
+    menu.classList.add('active');
+    overlay.classList.add('active');
+    // document.body.style.overflow = 'hidden';
+}
+function fecharMenu() {
+    menu.classList.remove('active');
+    overlay.classList.remove('active');
+    // document.body.style.overflow = '';
+}
+// FIM **********         **********    Menu Mobile   **********         **********      //
