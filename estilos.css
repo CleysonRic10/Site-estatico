@@ -256,8 +256,8 @@ h2.titulo span{
 
 /* ESTILO CONTRACHEQUE */
 section.grid1{              /* ----------------- TAMANHO SECAO CONTRA-CHEQUE ----------------- */
-    padding: 40px 4% 40px 4%;       /*Alto - Dir - Baixo - Esq */
-    /* padding: 40px 4%;  */                 
+    /* padding: 40px 4% 40px 4%;       Alto - Dir - Baixo - Esq */
+    padding: 40px 0%;                  
 }
 .money {
     margin: 0px 0px 5px 10px;                 /* Alto - Dir - Baixo - Esq */
@@ -294,7 +294,8 @@ input[type="number"]:focus {
     border-color: #007bff;
 }
 #container{
-    margin: 40px;                /* - Baixo - */
+    /* margin: 40px;                - Baixo - */
+    padding: auto;
     border: 1px solid #000;
     display: grid;
     /* grid-template-columns: 220px 230px 100px; */
@@ -321,36 +322,42 @@ input[type="number"]:focus {
 
 /* ESTILO SOBRE */
 section.sobre{               /* ----------------- TAMANHO seção SOBRE ----------------- */
-    padding: 40px 4% 40px 4%;                      /* Alto - Dir - Baixo - Esq */
-    /* padding: 40px 4%;   */
+    padding: 40px 4% 0px 4%;        /* Alto - Dir - Baixo - Esq */
 }
-.sobre .flex{         /* A Tag.classe chama a classe flex */
+.sobre .flex{ 
     align-items: center;
     justify-content: space-around;
-    gap: 90px;  
 }
-
-.txt-sobre ul li{ /*AQUI*/
-    color: #312E81;
-    margin: 40px 0;             /* 40px distancia em cima/baixo e Zero nas laterais */
+#sobre h2{
+    margin-bottom: 40px;
 }
-.txt-sobre p{ /*AQUI*/
+.txt-sobre ul {
+    margin: 40px 0px;
+}
+.txt-sobre li {
+    color: #fff;
+    list-style: none;
+    font-size: 18px;
+}
+.txt-sobre p{ 
     color: #312E81;
-    margin: 40px 0;             /* 40px distancia em cima/baixo e Zero nas laterais */
+    font-size: 18px;
+    margin-right: 10%;
 }
 .img-sobre img{
     margin-top: 0px;
-    width: clamp(370px, 30vw, 400px);
-    /* width: 400px; */
-    height: auto;
+    width: clamp(290px, 30vw, 340px);
+    /* height: auto; */
 }
+
+
 /* FIM ESTILO SOBRE */
 
 
 
 /* ESTILO RODAPÉ */
 footer{
-    padding: 40px 4%;
+    padding: 0px 4%;
     /* box-shadow: 0 0 40px 10px #312E81; */
 }
 footer .flex{
@@ -436,17 +443,6 @@ footer .line-footer p a{
     } 
 
     /* Menu mobile fechado */
-    #menu-mobile {
-        /* transform: translateX(100%); /* fora da tela *
-        transition: transform 1.0s ease; */
-    }
-/* 
-    .overlay-menu.active{
-        display: block;
-        opacity: 1;
-        visibility: visible;
-    }  */
-
     .overlay-menu.active {
         opacity: 1;
         pointer-events: auto;
@@ -500,6 +496,10 @@ footer .line-footer p a{
         background-color:rgb(222, 150, 100);
         /* font-size: clamp(.75rem, 1.65vw, 1.25rem); */
     }
+    #container{
+        margin: 40px 2%;
+        /* padding: 0px 4%; */
+    }
     #container .item{
         background: rgb(222, 150, 100);
     }
@@ -507,6 +507,24 @@ footer .line-footer p a{
         flex-direction: row; 
         align-items:flex-start;
     }
+    .txt-sobre { 
+        display: block; /* ou flex, se quiser alinhar */
+        text-align:justify;
+        margin: 0px 4%;
+    }
+    .txt-sobre ul {
+        text-align:justify;
+    }
+    .txt-sobre li {
+        color: #fff;
+        list-style-type: none;
+        font-size: 18px;
+        padding: 0px 4% 0px 0%;
+    }
+    .txt-sobre p {
+        margin-bottom: 40px;
+    }
+
     .txt-boas-vindas {
         display: block; /* ou flex, se quiser alinhar */
         text-align: center;

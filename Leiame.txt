@@ -80,6 +80,10 @@ Criar o Rodapé
 
 17-01
         8a alteracao
-                formula PV = CT ÷ (1 - %ML)
                 Visualizacao de conteudo no mobile. 
-                (Substit. experiencia por funcionario)
+                Config do grid1 contracheque.
+                Implementacao section Sobre.
+                Implementar demonstrativo Preco... 
+                formula PV = CT ÷ (1 - %ML)
+                Implementar espacamento entre sections no viewport...
+                
