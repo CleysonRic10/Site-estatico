@@ -175,9 +175,8 @@ header .btn-contato button:hover{
 
 
 /* ESTILO TOPO ou HOME */
-section.topo-do-site{               /* ----------------- TAMANHO SECAO topo-do-site ----------------- */
-    /* padding: 60px 40px 115px 40px; */
-    /* padding: 40px 4% 40px 4%;                      Alto - Dir - Baixo - Esq */
+section.topo-do-site{               /* Tag chama classe */
+    padding: 60px 40px 115px 40px;                      /* Alto - Dir - Baixo - Esq */
 }
 section.topo-do-site .flex{         /* A Tag.classe chama a classe flex */
     align-items: center;
@@ -208,56 +207,14 @@ section.topo-do-site .flex{         /* A Tag.classe chama a classe flex */
 
 
 
-/* ESTILO BOXES */
-section.financeiro{         /* ----------------- TAMANHO SECAO BOXES ----------------- */
-    /* padding: 40px 4% 40px 4%;      Alto - Dir - Baixo - Esq */
-    /* padding: 40px 4%;   */
-}
-section.financeiro .flex{
-    gap: 60px;
-}
-h2.titulo{
-    color: #312E81;     /* Minhas */
-    font-size: 2.0em;              /*font-size: 38px;*/ 
-    text-align: center;
-}
-h2.titulo span{
-    padding: 0 0 0 2%;    /* HABILIDADES */
-    color:#FFF;
-    font-size: 1.0em;                 /*font-size: 38px;*/
-    background-color: #171354;      /* #312E81 #0d0c23 */ 
-}
-.financeiro .financeiro-box{                        /* chama a section financeiro e a classe financeiro */
-    color: #FFF;        
-    background-color: #0c0a2d;      /* #312E81  #0d0c23 */
-    padding: 40px;                    /* espacamento todos os lados */
-    border-radius: 20px;    
-    /* border: 2px solid #fff; */
-    margin-top: 45px;
-    transition: .2s;
-}
-.financeiro .financeiro-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #0c0a2d;     /*#ffffff7b - #312E81 - */
-}
-.financeiro .financeiro-box i{
-    font-size: 4.25em;                  /* 70px icons dos boxes*/
-    color: #312E81;
-    background-color: #FFF;
-}
-.financeiro .financeiro-box h3{
-    font-size: 1.25em;                   /* 28px titulo dos boxes*/
-    margin: 15px 0;                     /* espacamento todos os lados */
-}
-/* FIM ESTILO BOXES */
 
 
 
 
-/* ESTILO CONTRACHEQUE */
-section.grid1{              /* ----------------- TAMANHO SECAO CONTRA-CHEQUE ----------------- */
-    /* padding: 40px 4% 40px 4%;       Alto - Dir - Baixo - Esq */
-    /* padding: 40px 4%;  */                 
+/* ESTILO EXPERIENCIA */
+section.grid1{               /* Tag chama classe */
+    /*padding: 30px 40px 720px 40px;                      /* Alto - Dir - Baixo - Esq */
+    padding: 40px 4%;                      /* Alto - Dir - Baixo - Esq */
 }
 .money {
     margin: 0px 0px 5px 10px;                 /* Alto - Dir - Baixo - Esq */
@@ -319,28 +276,39 @@ input[type="number"]:focus {
 
 
 
-/* ESTILO SOBRE */
-section.sobre{               /* ----------------- TAMANHO seção SOBRE ----------------- */
-    /* padding: 40px 4% 40px 4%;                      Alto - Dir - Baixo - Esq */
-    /* padding: 40px 4%;   */
-    padding: 0px 4%;
+/* ESTILO ESPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
 }
-#txt-sobre {
-    display: block;
-    text-align:justify;
-    margin: 10px 4%;
+section.especialidades .flex{
+    gap: 60px;
 }
-.txt-sobre ul{
-    list-style-type: none;
+h2.titulo{
+    color: #312E81;     /* Minhas */
+    font-size: 2.0em;              /*font-size: 38px;*/ 
+    text-align: center;
 }
-.txt-sobre ul li{ 
-    color: #FFF;
+h2.titulo span{
+    padding: 0 0 0 2%;    /* HABILIDADES */
+    color:#FFF;
+    font-size: 1.0em;                 /*font-size: 38px;*/
+    background-color: #171354;      /* #312E81 #0d0c23 */ 
 }
-/* #txt-sobre ul li:hover{
-    color: #312E81;
-    transform: scale(1.05); 
-} */
-.txt-sobre p{
+.especialidades .especialidades-box{                        /* chama a section especialidades e a classe especialidades */
+    color: #FFF;        
+    background-color: #0c0a2d;      /* #312E81  #0d0c23 */
+    padding: 40px;                    /* espacamento todos os lados */
+    border-radius: 20px;    
+    /* border: 2px solid #fff; */
+    margin-top: 45px;
+    transition: .2s;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #0c0a2d;     /*#ffffff7b - #312E81 - */
+}
+.especialidades .especialidades-box i{
+    font-size: 4.25em;                  /* 70px icons dos boxes*/
     color: #312E81;
     margin: 40px 0;             /* 40px distancia em cima/baixo e Zero nas laterais */
 }
@@ -434,99 +402,37 @@ footer .line-footer p a{
     .menu-desktop, .btn-contato{
         display: none;
     }
-    
-    #open-menu {
-        display: block; /* ou inline-block */
-        font-size: 32px;
-        cursor: pointer;
-    } 
-
-    /* Menu mobile fechado */
-    /* #menu-mobile {
-        transform: translateX(100%); 
-        transition: transform 1.0s ease;
-    } */
-    
-    /* 
-    .overlay-menu.active{
-        display: block;
-        opacity: 1;
-        visibility: visible;
-    }  */
-
-    .overlay-menu.active {
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    /* Menu aberto */
-    #menu-mobile.active {
-        width: 75%;
-        transform: translateX(0);
-        opacity: 1;
-    }
-    #menu-mobile ul {
-        list-style: none;
-        margin-top: 40px;
-    }
-    #menu-mobile li {
-        margin-bottom: 20px;
-    }
-    #menu-mobile a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    #close-menu {
-        font-size: 24px;
-        cursor: pointer;
-        color: #fff;
-    }
-    /* FIM -------------------------- ESTILO MOBILE -------------------------- */
-
-    /*                          Menu DESK TOP do cabecalho                      */
 
     /* TOPO do SITE */
-    section.topo-do-site{ /* ----------------- Exibir titulo antes da foto no topo-do-site ----------------- */
-        /* padding: 0px 40px 115px 40px;                       Alto - Dir - Baixo - Esq  mobile */ 
-        padding: 0px 0px 0px 40px;
+    section .topo-do-site{
+        padding: 20 8%;
     }
     .topo-do-site h1{
         font-size: 30px;
     }
-    .topo-do-site .txt-topo-site p{ 
+    .topo-do-site .txt-topo-site p{
         font-size: 20px;
     }
     body{
         background-color:rgb(222, 150, 100);
         /* font-size: clamp(.75rem, 1.65vw, 1.25rem); */
     }
-    /* BOXES */
-    #container .item{
-        background: rgb(222, 150, 100);
-    }
-    #container{
-        margin: 40px 4%;                /* - Baixo - */
-    }
-    #sobre .flex{ /* ----------------- Exibir titulo antes da foto no topo-do-site ----------------- */
-        flex-direction: column-reverse; 
-        /* flex-direction: column; */
+    footer .flex{
+        flex-direction: row; 
+        align-items:flex-start;
     }
     .txt-boas-vindas {
         display: block; /* ou flex, se quiser alinhar */
         text-align: center;
         margin: 20px 0;
     }
+
     .txt-boas-vindas h1 {
         font-size: 22px;
     }
+
     .txt-boas-vindas span {
         color: rgb(222, 150, 100);
-    }
-
-    footer .flex{
-        flex-direction: row; 
-        align-items:flex-start;
     }
 }
 /* FIM      Tela iPad 1080px LARGURA            */
