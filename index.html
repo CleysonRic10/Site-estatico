@@ -23,7 +23,7 @@
                 <nav class="menu-desktop">
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#especialidades">SERVIÇOS</a></li>
+                        <li><a href="#servicos">SERVIÇOS</a></li>
                         <li><a href="#sobre">SOBRE</a></li>                        
                     </ul>
                 </nav>
@@ -38,7 +38,7 @@
                     <i id="close-menu" class="bi bi-x-lg"></i>          <!--btn-fechar-->
                     <ul class="item-menu">
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#especialidades">SERVIÇOS</a></li>
+                        <li><a href="#servicos">SERVIÇOS</a></li>
                         <li><a href="#sobre">SOBRE</a></li>  
                         <li><a href="#">CONTATO</a></li>                      
                     </ul>
@@ -74,91 +74,100 @@
             </div><!--interface-->
         </section><!--topo-do-site-->
 
-        <section id="especialidades" class="especialidades">
+        <section id="servicos" class="servicos">
             <div class="interface">
                 <h2 class="titulo">Área de<span> SERVIÇOS</span>.</h2>
                 <div class="flex">
 
                     <a href="#contracheque">
-                        <div class="especialidades-box">
+                        <div class="servicos-box">
                             <i class="bi bi-code-slash"></i>
                             <h3>FUNCIONÁRIOS</h3>
-                            <p>Projeção de CONTRA-CHEQUE.
+                            <p>Acompanhamento de CONTRA-CHEQUE.
                             </p>
-                        </div><!--especialidades-box 1 -->
+                        </div><!--servicos-box 1 -->
                     </a><!--contracheque-->
 
-                    <a href="#bens">
-                        <div class="especialidades-box">
+                    <a href="#precos">
+                        <div class="servicos-box">
                             <i class="bi bi-braces"></i>
-                            <h3>BENS E PRODUTOS</h3>
-                            <p>Demonstração CUSTO e LUCRO.
+                            <h3>PREÇOS</h3>
+                            <p>Projeção de INFLAÇÃO e LUCRO.
                             </p>
-                        </div><!--especialidades-box 2 -->
-                    </a><!--BENS-->
+                        </div><!--servicos-box 2 -->
+                    </a><!--precos-->
 
                 </div><!--flex-->
             </div><!--interface-->
-        </section><!--especialidades-->
+        </section><!--servicos-->
 
         <section id="contracheque" class="grid1"><!--CONTRACHEQUE-->
             <div class="interface">
                 <div class="txt-do-site">
-                    <h2 class="titulo">Projeção de<span>CONTRACHEQUE</span>.</h2>
+                    <h2 class="titulo">Acompanhamento de<span>CONTRACHEQUE</span>.</h2>
                 </div>
                 <div id="container">
                     <div class="item">
                         <form action="" method="post">
-                            <label for="salario" tabindex="0">Seu salário R$</label>
+                            <label for="salario">Seu salário R$</label>
                             <input type="text" tabindex="1" id="salario" value="1.621,01" class="money"/>
                         </form>
                     </div><!--item-->
                     <div class="item">
                         <form action="" method="post">
-                            <label for="hr-semana">Quantidade horas<br>Semanais</label>
-                            <input type="number" tabindex="2" id="hr-semana" value="40" onblur="calcular()"/>
+                            <label for="hr-semana">Quantidade <input type="number" tabindex="2" id="hr-semana" value="40" onblur="calcular()"/> horas Semanais</label>
                         </form>
                     </div><!--item-->
                     <div class="item">
-                        <p tabindex="3">Seu salário por hora R$ <span id="vlr_hr">0,00</span></p>
+                        <p>Seu salário por hora R$ <span id="vlr_hr">0,00</span></p><!--Label exibe o resultado calculado-->
                     </div><!--item-->
 
                     <div class="item">
-                        <!--p tabindex="4">Quantidade de <span id="num-sem" name="num-sem" value="52,179" readonly>52</span> semanas do ano.</p-->
-                        <p tabindex="4">Você ganha           R$ <span id="vlr_sem">0,01</span> por semana.</p> 
+                        <p>Você ganha R$<span id="vlr_sem">0,01</span> por semana.</p><!--Label exibe o resultado calculado--> 
                     </div><!--item-->
                     <div class="item">
                         <!--p tabindex="4">Quantidade de <span id="hr-trab-ano" name="hr-trab-ano" value="4,333" readonly>4</span> semanas por mês.</p-->
-                        <p tabindex="4">Você trabalha <span id="hr-trab-ano" value="173,333" readonly>173</span> horas trabalhadas por mês.</p> 
+                        <p>Você trabalha <span id="hr-trab-mes">00</span> horas por mês.</p> 
                     </div><!--item-->
                     <div class="item">
-                        <p tabindex="4">Você trabalha <span id="hr-trab-ano" name="hr-trab-ano" value="2.087,16" readonly>2.080</span> horas trabalhadas por ano.</p>
+                        <p>Você trabalha <span id="hr-trab-ano">00</span> horas por ano</p>
                     </div><!--item-->
-
-                    <div class="item"></div><!--item-->
-                    <div class="item"></div><!--item-->
-                    <div class="item"></div><!--item-->
-
-                    <div class="item"></div><!--item-->
-                    <div class="item"></div><!--item-->
-                    <div class="item"></div><!--item-->
-
+                    <div class="item">Um (1) ano tem 52 semanas.</div><!--item-->
+                    <div class="item">Um (1) mês tem 720 horas.</div><!--item-->
+                    <div class="item">Um (1) ano tem 8.760 horas.</div><!--item-->
                 </div><!--container-->
             </div><!--interface-->
         </section><!--CONTRACHEQUE-->
 
-        <section id="bens" class="grid1"><!--CONTRACHEQUE-->
+        <section id="precos" class="grid1"><!--CONTRACHEQUE-->
             <div class="interface">
                 <div class="txt-do-site">
-                    <h2 class="titulo">Demonstrativo de<span> CUSTO e LUCRO</span>.</h2>
+                    <h2 class="titulo">Projeção de inflação e<span> LUCRO</span>.</h2>
                 </div>
                 <div id="container">
-                    <div class="item"></div><!--item-->
-                    <div class="item"></div><!--item-->
-                    <div class="item"></div><!--item-->
+                    <div class="item">
+                        <form action="" method="post">
+                            <label for="indice">Digite índice inflação </label>
+                            <input type="text" tabindex="3" id="indice" value="5,1" class="money"/>
+                            <label for="indice">% </label>
+                        </form>
+                    </div><!--item-->
+                    <div class="item">R$ 100,00 desvalorizará o poder de compra </div><!--item-->
+                    <div class="item">para R$ <span id="R_vlr">0,00</span> em um (1) ano.</div><!--item-->
+
+                    <div class="item">
+                        <form action="" method="post">
+                            <label for="lucro">Lucro desejado de </label>
+                            <input type="text" tabindex="3" id="lucro" value="20" class="money"/>
+                            <label for="lucro">% </label>
+                        </form>
+                    </div><!--item-->
+                    <div class="item">Custo do produto ou serviço de R$ 100,00 </div><!--item-->
+                    <div class="item">O preço de venda será R$ <span id="PV_vlr">0,00</span> .</div><!--item-->
+
                 </div><!--container-->
             </div><!--interface-->
-        </section><!--BENS-->
+        </section><!--precos-->
 
         <section id="sobre" class="sobre"><!--SOBRE-->
             <div class="interface">

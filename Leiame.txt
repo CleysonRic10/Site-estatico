@@ -54,11 +54,11 @@ Criar o Rodapé
 14-01
         Corrigir o calculo de 'Ganho semanal'.
 
-        criar branch menu:...
-                17h - Criacao menu mobile...
+        criar branch menu.
+                17h - Criacao menu mobile.
 
 15-01
-        Melhoria menu MOBILE ...
+        Melhoria menu MOBILE.
 
 15-01
         6a alteracao
@@ -83,7 +83,17 @@ Criar o Rodapé
                 Visualizacao de conteudo no mobile. 
                 Config do grid1 contracheque.
                 Implementacao section Sobre.
-                Implementar demonstrativo Preco... 
+                Implementar demonstrativo Preco. 
                 formula PV = CT ÷ (1 - %ML)
                 Implementar espacamento entre sections no viewport...
+18-01
+        9a alteracao
+                html e css replace especialidades to servicos
+
+19-01
+        10a alteracao
+                criacao da section Preco.
+                Implemetacao calculos de Inflacao e lucro.
+                Implementar agente whatsapp... 
+                Implementar formulario de contato...
                 

@@ -45,23 +45,40 @@ para garantir que o seu descanso também esteja contabilizado no valor do salár
   const input_hr_semana = document.getElementById('hr-semana');
   const resultado = document.getElementById('vlr_hr');
   const resultado2 = document.getElementById('vlr_sem');
+  const resultado3 = document.getElementById('hr-trab-mes');
+  const resultado4 = document.getElementById('hr-trab-ano');
+  const resultado5 = document.getElementById('R_vlr');    //              INFLACAO
+  const resultado6 = document.getElementById('PV_vlr');   //              LUCRO
+  const input_indice = document.getElementById('indice'); //r = ritmo ou taxa em decimal.(INFLACAO)
+  const input_lucro = document.getElementById('lucro');   //              LUCRO
 
   function calcular() {
       // converte "1.621,01" → 1621.01
       const Salbase = Number(
     
           input_salario.value.replace(/\./g, '').replace(',', '.')
-      
+      );
+
+      // converte text → number                                           INFLACAO
+      const r = Number(
+
+          input_indice.value.replace(/\./g, '').replace(',', '.')
+      );
+
+      // converte text → number                                           LUCRO
+      const Lcr = Number(
+
+          input_lucro.value.replace(/\./g, '').replace(',', '.')
       );
 
       //total de hora trabalhada por semana.
       const tot_hr_sem = Number(input_hr_semana.value);
 
-      //total de hora trabalhada por mês (ref. pagamentos).
-      let media_hr_tr_mes = tot_hr_sem / 5;
+      //total de hora trabalhada por dia (ref. pagamentos).
+      let media_hr_tr_dia = tot_hr_sem / 5;
 
       //valor por hora semanal
-      const vlr_hora_dia = Salbase / (media_hr_tr_mes * 30);
+      const vlr_hora_dia = Salbase / (media_hr_tr_dia * 30);
 
       // exibe no formato brasileiro                    6,75 ou 6,14
       resultado.textContent = vlr_hora_dia.toLocaleString('pt-BR', {
@@ -69,26 +86,72 @@ para garantir que o seu descanso também esteja contabilizado no valor do salár
         maximumFractionDigits: 3
       });
 
-      const tot_semana_mes = 4.285719;    //índice para retornar o valor semanal para mensal!
       const vlr_semana = Salbase * (7/30);
 
-      //console.log(vlr_semana);
-
-      // SEMANAL
+      // $ SEMANAL
       resultado2.textContent = vlr_semana.toLocaleString('pt-BR', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
       });
 
+      //const num_semanas_ano = 52.179;
+      const tot_semana_mes = 4.285719;      //índice quantid semanas do mes.
+      const tot_hr_mes = tot_hr_sem * 5;    //num 5 semanas.
 
+      // Hrs MENSAL
+      resultado3.textContent = tot_hr_mes.toLocaleString('pt-BR', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 3
+      });
+
+      const tot_hr_ano = tot_hr_mes * 12;    //num 12 meses.
+
+      // Hrs ANUAL
+      resultado4.textContent = tot_hr_ano.toLocaleString('pt-BR', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 3
+      });
+
+
+    //                                                                    INFLACAO
+      const Valor_Inicial = 100;                                         
+      const t = 1;                  //t = 1 ano (tempo)
+      let r_dec = r/100;
+      const Valor_Futuro = Valor_Inicial * ((1-r_dec) * t);
+
+      resultado5.textContent = Valor_Futuro.toLocaleString('pt-BR', {     //  INFLAÇÃO
+       minimumFractionDigits: 2,
+        maximumFractionDigits: 3
+      });
+
+    //                                                                    LUCRO
+      const Valor_custo = 100;                                         
+      let Lcr_dec = Lcr/100;
+      const Valor_PV = Valor_custo * (1+Lcr_dec);
+
+      resultado6.textContent = Valor_PV.toLocaleString('pt-BR', {         //  LUCRO
+       minimumFractionDigits: 2,
+        maximumFractionDigits: 3
+      });
+
+      //console.log(vlr_semana);
   }
+
 
   // recalcula sempre que mudar
   input_salario.addEventListener('input', calcular);
   input_hr_semana.addEventListener('input', calcular);
 
+  resultado3.addEventListener('input', calcular);
+  resultado4.addEventListener('input', calcular);
+
+  input_indice.addEventListener('input', calcular);                       //  INFLAÇÃO
+  input_lucro.addEventListener('input', calcular);                        //  LUCRO
+
   // cálculo inicial
   calcular();
+
+
 
 
 //     **********         **********    Menu Mobile   **********         **********      //

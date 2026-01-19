@@ -40,8 +40,8 @@ body{
 
 
 /* ESTILO CABECALHO */
-header {
-    /* padding: 40px 4%;           40px distancia em cima/baixo e 4% nas laterais */
+header {                    /* ----------------- TAMANHO SECAO ----------------- */
+    /* padding: 40px 4%;    */
     padding: 40px 4% 0px 4%;                      /* Alto - Dir - Baixo - Esq mobile */
 }
 /* header > .interface {   /* Classe de estilo que esta dentro da TAG *
@@ -91,12 +91,7 @@ header .btn-contato button:hover{
 
 
 
-
-
 /* ---------------------------- ESTILO MOBILE ---------------------------- */
-/*                      id="btn-menu" id="menu-mobile"                      */
-/* .tela-mobile.open-menu */
-/* .nav-itens {} */
 
 .nav-mobile{
     overflow: hidden;
@@ -175,7 +170,7 @@ header .btn-contato button:hover{
 
 
 /* ESTILO TOPO ou HOME */
-section.topo-do-site{               /* ----------------- TAMANHO SECAO topo-do-site ----------------- */
+section.topo-do-site{               /* ----------------- TAMANHO SECAO ----------------- */
     /* padding: 60px 40px 115px 40px; */
     padding: 40px 4% 40px 4%;                      /* Alto - Dir - Baixo - Esq */
 }
@@ -209,11 +204,11 @@ section.topo-do-site .flex{         /* A Tag.classe chama a classe flex */
 
 
 /* ESTILO BOXES */
-section.especialidades{         /* ----------------- TAMANHO SECAO BOXES ----------------- */
+section.servicos{         /* ----------------- TAMANHO SECAO ----------------- */
     padding: 40px 4% 40px 4%;      /* Alto - Dir - Baixo - Esq */
     /* padding: 40px 4%; */  
 }
-section.especialidades .flex{
+section.servicos .flex{
     gap: 60px;
 }
 h2.titulo{
@@ -227,7 +222,7 @@ h2.titulo span{
     font-size: 1.0em;                 /*font-size: 38px;*/
     background-color: #171354;      /* #312E81 #0d0c23 */ 
 }
-.especialidades .especialidades-box{                        /* chama a section especialidades e a classe especialidades */
+.servicos .servicos-box{                        /* chama a section servicos e a classe servicos */
     color: #FFF;        
     background-color: #0c0a2d;      /* #312E81  #0d0c23 */
     padding: 40px;                    /* espacamento todos os lados */
@@ -236,16 +231,16 @@ h2.titulo span{
     margin-top: 45px;
     transition: .2s;
 }
-.especialidades .especialidades-box:hover{
+.servicos .servicos-box:hover{
     transform: scale(1.05);
     box-shadow: 0 0 8px #0c0a2d;     /*#ffffff7b - #312E81 - */
 }
-.especialidades .especialidades-box i{
+.servicos .servicos-box i{
     font-size: 4.25em;                  /* 70px icons dos boxes*/
     color: #312E81;
     background-color: #FFF;
 }
-.especialidades .especialidades-box h3{
+.servicos .servicos-box h3{
     font-size: 1.25em;                   /* 28px titulo dos boxes*/
     margin: 15px 0;                     /* espacamento todos os lados */
 }
@@ -255,7 +250,7 @@ h2.titulo span{
 
 
 /* ESTILO CONTRACHEQUE */
-section.grid1{              /* ----------------- TAMANHO SECAO CONTRA-CHEQUE ----------------- */
+section.grid1{              /* ----------------- TAMANHO SECAO ----------------- */
     /* padding: 40px 4% 40px 4%;       Alto - Dir - Baixo - Esq */
     padding: 40px 0%;                  
 }
@@ -321,7 +316,7 @@ input[type="number"]:focus {
 
 
 /* ESTILO SOBRE */
-section.sobre{               /* ----------------- TAMANHO seção SOBRE ----------------- */
+section.sobre{               /* ----------------- TAMANHO SECAO ----------------- */
     padding: 40px 4% 0px 4%;        /* Alto - Dir - Baixo - Esq */
 }
 .sobre .flex{ 
@@ -349,14 +344,12 @@ section.sobre{               /* ----------------- TAMANHO seção SOBRE --------
     width: clamp(290px, 30vw, 340px);
     /* height: auto; */
 }
-
-
 /* FIM ESTILO SOBRE */
 
 
 
 /* ESTILO RODAPÉ */
-footer{
+footer{                 /* ----------------- TAMANHO SECAO ----------------- */
     padding: 0px 4%;
     /* box-shadow: 0 0 40px 10px #312E81; */
 }
@@ -419,18 +412,13 @@ footer .line-footer p a{
     .flex{
         flex-direction: column;
     }
-    .topo-do-site .flex{ /* ----------------- Exibir titulo antes da foto no topo-do-site ----------------- */
+    .topo-do-site .flex{ 
         flex-direction: column-reverse; 
         /* flex-direction: column; */
     }
     header .flex{
         align-items:flex-start;
     }
-    /*                          Menu DESK TOP do cabecalho                      */
-
-
-
-
     /* ---------------------------- ESTILO MOBILE ---------------------------- */
     .menu-desktop, .btn-contato{
         display: none;
@@ -440,8 +428,7 @@ footer .line-footer p a{
         display: block; /* ou inline-block */
         font-size: 32px;
         cursor: pointer;
-    } 
-
+    }
     /* Menu mobile fechado */
     .overlay-menu.active {
         opacity: 1;
@@ -477,19 +464,14 @@ footer .line-footer p a{
     }
     /* FIM -------------------------- ESTILO MOBILE -------------------------- */
 
-
-
-
-    /*                          Menu DESK TOP do cabecalho                      */
-
     /* TOPO do SITE */
-    section.topo-do-site{ /* ----------------- Exibir titulo antes da foto no topo-do-site ----------------- */
+    section.topo-do-site{                   /* ----------------- TAMANHO SECAO ----------------- */
         padding: 0px 40px 115px 40px;                      /* Alto - Dir - Baixo - Esq  mobile */
     }
     .topo-do-site h1{
         font-size: 30px;
     }
-    .topo-do-site .txt-topo-site p{ /*AQUI*/
+    .topo-do-site .txt-topo-site p{ 
         font-size: 20px;
     }
     body{
