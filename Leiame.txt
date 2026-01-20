@@ -97,3 +97,6 @@ Criar o Rodapé
                 Implementar agente whatsapp... 
                 Implementar formulario de contato...
                 
+20-01
+        11a alteracao
+                Implementacao na section Preco de Custo energia eletrica.

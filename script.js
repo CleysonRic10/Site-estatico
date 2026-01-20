@@ -47,10 +47,20 @@ para garantir que o seu descanso também esteja contabilizado no valor do salár
   const resultado2 = document.getElementById('vlr_sem');
   const resultado3 = document.getElementById('hr-trab-mes');
   const resultado4 = document.getElementById('hr-trab-ano');
+
+
+  const input_indice = document.getElementById('indice'); //              INFLACAO        r = ritmo ou taxa em decimal.
+
+  const input_potencia = document.getElementById('potencia'); //          WATTS
+  const input_tempo = document.getElementById('tempo');   //              WATTS
+  const input_24h = document.getElementById('24h');       //              WATTS
+  const input_tarifa = document.getElementById('tarifa'); //              WATTS
+
   const resultado5 = document.getElementById('R_vlr');    //              INFLACAO
-  const resultado6 = document.getElementById('PV_vlr');   //              LUCRO
-  const input_indice = document.getElementById('indice'); //r = ritmo ou taxa em decimal.(INFLACAO)
-  const input_lucro = document.getElementById('lucro');   //              LUCRO
+
+  const resultado7 = document.getElementById('EDP_vlr');  //              WATTS
+  const resultado8 = document.getElementById('tempo');    //              WATTS
+
 
   function calcular() {
       // converte "1.621,01" → 1621.01
@@ -65,10 +75,25 @@ para garantir que o seu descanso também esteja contabilizado no valor do salár
           input_indice.value.replace(/\./g, '').replace(',', '.')
       );
 
-      // converte text → number                                           LUCRO
-      const Lcr = Number(
+      // converte text → number                                           WATTS
+      const Tmp = Number(
 
-          input_lucro.value.replace(/\./g, '').replace(',', '.')
+          input_tempo.value.replace(/\./g, '').replace(',', '.')
+      );
+      const Tmp_24 = Number(
+
+          input_24h.value.replace(/\./g, '').replace(',', '.')
+      );
+      // let Tmp = (23.99 > 24.00) ? "TRUE" : "FALSE";
+      if (Tmp > Tmp_24) {
+        // Condicao Verdadeira, Tmp MAIOR que 24h, Tmp recebe valor de 24h.
+        Tmp = Tmp_24;
+      }else{
+        // Condicao Falsa, Tmp MENOR que 24h. Segue o flow!
+      }
+      const Tarifa = Number(
+
+          input_tarifa.value.replace(/\./g, '').replace(',', '.')
       );
 
       //total de hora trabalhada por semana.
@@ -124,12 +149,14 @@ para garantir que o seu descanso também esteja contabilizado no valor do salár
         maximumFractionDigits: 3
       });
 
-    //                                                                    LUCRO
-      const Valor_custo = 100;                                         
-      let Lcr_dec = Lcr/100;
-      const Valor_PV = Valor_custo * (1+Lcr_dec);
+    //                                                                    WATTS
+      let Pot_kW = Number(input_potencia.value)/1000;
+      //const EDP_tabela = Tarifa;                  
+      let Delta_tmp = Tmp * 30;                 //horas de uso por mes.
+      let E = Pot_kW * Delta_tmp;
+      const Valor_EDP = Tarifa * E;
 
-      resultado6.textContent = Valor_PV.toLocaleString('pt-BR', {         //  LUCRO
+      resultado7.textContent = Valor_EDP.toLocaleString('pt-BR', {         //  WATTS
        minimumFractionDigits: 2,
         maximumFractionDigits: 3
       });
@@ -146,7 +173,11 @@ para garantir que o seu descanso também esteja contabilizado no valor do salár
   resultado4.addEventListener('input', calcular);
 
   input_indice.addEventListener('input', calcular);                       //  INFLAÇÃO
-  input_lucro.addEventListener('input', calcular);                        //  LUCRO
+
+  input_potencia.addEventListener('input', calcular);                     //  WATTS
+  input_tempo.addEventListener('input', calcular);                        //  WATTS
+  input_tarifa.addEventListener('input', calcular);                       //  WATTS
+
 
   // cálculo inicial
   calcular();
